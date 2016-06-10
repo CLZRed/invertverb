@@ -31,8 +31,6 @@
 	};
 	$(document).ready(function(){
 		for (key, val in irregularVerbsJSON) {
-			console.log(key + ", " + val);
-		}
 		$("#inf").keyup(function(){
 			if ($("#inf").val() in irregularVerbsJSON) {
 				$("#psi").val(irregularVerbsJSON[$("#inf").val()].past);
