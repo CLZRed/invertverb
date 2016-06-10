@@ -31,7 +31,7 @@
 	};
 	$(document).ready(function(){
 		$("#inf").keyup(function(){
-			if (irregularVerbsJSON.hasOwnProperty($("#inf").val())) {
+			if ($("#inf").val() in irregularVerbsJSON) {
 				$("#psi").val(irregularVerbsJSON[$("#inf").val()].past);
 				$("#ppa").val(irregularVerbsJSON[$("#inf").val()].participles);
 			} else if ($("#inf").val().charAt($("#inf").val().length - 1) == "e"){
