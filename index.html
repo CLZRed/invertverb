@@ -59,7 +59,6 @@ function endsWithPresentSimple(string) {
 	return null;
 }
 $(document).ready(function(){
-	for (key, val in irregularVerbsJSON) {
 	$("#inf").keyup(function(){
 		var verbs;
 		if ((verbs = endsWithPresentSimple($("#inf").val())) != null) {
